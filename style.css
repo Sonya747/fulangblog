@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#canvas-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative; /* 父容器相对定位 */
+    margin: 0;
+    padding: 0;
+    border-bottom: lightgray 1px solid;
+    overflow: auto;
+
+    /*canvas {*/
+    /*    width: 100%;*/
+    /*    height: 100%;*/
+    /*    margin: 0;*/
+    /*    padding: 0;*/
+    /*}*/
+}
+
+#canvas-wrap canvas {
+    position: absolute; /* 子画布绝对定位，基于父容器 */
+    top: 0; /* 对齐到父容器顶部 */
+    left: 0; /* 对齐到父容器左侧 */
+    width: 100%; /* 宽度填满父容器 */
+    height: 100%; /* 高度填满父容器 */
+    overflow: auto;
+}
